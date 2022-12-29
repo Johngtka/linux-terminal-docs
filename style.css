@@ -1,0 +1,18 @@
+body{
+margin: 0;
+padding: 0;
+width: 100%;
+background-image: url("p.png");
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+header{
+width: 100%;
+text-align: center;
+}
+footer{
+width: 100%;
+text-align: center;
+}
