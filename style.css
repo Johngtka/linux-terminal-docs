@@ -10,12 +10,24 @@ body {
 }
 
 header {
+    background-color: #fd8d6b;
     width: 100%;
+    height: auto;
     text-align: center;
 }
 
+header>h1 {
+    margin: 0;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
 footer {
+    padding-top: 2%;
+    padding-bottom: 2%;
     width: 100%;
+    background-color: #f76800;
+    font-weight: bold;
     text-align: center;
 }
 
