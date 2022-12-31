@@ -39,7 +39,8 @@ footer {
 
 .option {
     /* background-color: black; */
+    text-align: center;
     width: 20%;
+    height: 10%;
     float: left;
-    height: 100vh;
 }
