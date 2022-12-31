@@ -15,9 +15,15 @@ const opt1 = [document.querySelector('#option1'), document.querySelector('#optio
 function option() {
     const tab = ["listing commands", "directory commands", "system commands", "hadrware commands", "files commands", "software commands"]
     for (let i = 0; i <= 6; i++) {
+        opt1[i].setAttribute('onClick', eventclicker())
         opt1[i].innerHTML = '<p>' + tab[i].toUpperCase() + '</p>'
     }
 }
 function eventclicker() {
-
+    opt1[0].addEventListener("click", () => { console.log("dfsf") })
+    opt1[1].addEventListener("click", () => { console.log("dfsf") })
+    opt1[2].addEventListener("click", () => { console.log("dfsf") })
+    opt1[3].addEventListener("click", () => { console.log("dfsf") })
+    opt1[4].addEventListener("click", () => { console.log("dfsf") })
+    opt1[5].addEventListener("click", () => { console.log("dfsf") })
 }
