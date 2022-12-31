@@ -18,3 +18,6 @@ function option() {
         opt1[i].innerHTML = '<p>' + tab[i].toUpperCase() + '</p>'
     }
 }
+function eventclicker() {
+
+}
