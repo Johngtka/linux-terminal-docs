@@ -19,10 +19,7 @@ function option() {
 }
 function eventclicker() {
     const sub = ["ls.html"]
-    opt1[0].addEventListener("click", () => { window.open(sub[0], "_self") })
-    opt1[1].addEventListener("click", () => { console.log("dfsf") })
-    opt1[2].addEventListener("click", () => { console.log("dfsf") })
-    opt1[3].addEventListener("click", () => { console.log("dfsf") })
-    opt1[4].addEventListener("click", () => { console.log("dfsf") })
-    opt1[5].addEventListener("click", () => { console.log("dfsf") })
+    for (let i = 0; i <= 2; i++) {
+        opt1[i].addEventListener("click", () => { window.open(sub[i], "_self") })
+    }
 }
