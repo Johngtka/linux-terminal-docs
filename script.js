@@ -17,7 +17,7 @@ const opt1 = [document.querySelector('#option1'), document.querySelector('#optio
 
 // Funkcja która przypisuje przekonwertowany text do(CAPS LOCK) jako wartość z lokalnej tablicy do elementu opt1. Dodatkowo dodająca do elementów opt1 zdarzenie onclick ustawione na inną funkcję
 function option() {
-    const tab = ["listing commands", "directory commands", "system commands", "hardware commands", "files commands", "software commands"]
+    const tab = ["listing commands", "directory commands", "system commands", "hardware commands", "files commands", "software commands"];
     for (let i = 0; i <= 6; i++) {
         opt1[i].setAttribute('onClick', eventclicker())
         opt1[i].innerHTML = '<p>' + tab[i].toUpperCase() + '</p>'
@@ -26,8 +26,8 @@ function option() {
 option()
 // Funkcja dopisana jako zdarzenie podczas procesu funkcji option(), wykonująca metode słuchacza zdarzeniowego który otworzy ospowiedni plik z pod folderu /subpages na tej samej karcie przeglądarki
 function eventclicker() {
-    const sub = ["/subpages/ls.html", "/subpages/dir.html"]
-    for (let i = 0; i <= 3; i++) {
+    const sub = ["/subpages/ls.html", "/subpages/dir.html", "/subpages/os.html", "/subpages/hw.html", "/subpages/fil.html", "/subpages/soft.html"]
+    for (let i = 0; i <= 6; i++) {
         opt1[i].addEventListener("click", () => { window.open(sub[i], "_self") })
     }
 }
