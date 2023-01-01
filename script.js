@@ -15,7 +15,7 @@ render()
 // Globalna tablica z uchwytami do utworzonych elementów tworzonych w funkcji render()
 const opt1 = [document.querySelector('#option1'), document.querySelector('#option2'), document.querySelector('#option3'), document.querySelector('#option4'), document.querySelector('#option5'), document.querySelector('#option6')]
 
-// Funkcja która przypisuje przekonwertowany text do(CAPS LOCK) jako wartość z lokalnej tablicy do elementu opt1. Datkowo dodająca do elementów opt1 zdarzenie onclick ustawione na inną funkcję
+// Funkcja która przypisuje przekonwertowany text do(CAPS LOCK) jako wartość z lokalnej tablicy do elementu opt1. Dodatkowo dodająca do elementów opt1 zdarzenie onclick ustawione na inną funkcję
 function option() {
     const tab = ["listing commands", "directory commands", "system commands", "hardware commands", "files commands", "software commands"]
     for (let i = 0; i <= 6; i++) {
