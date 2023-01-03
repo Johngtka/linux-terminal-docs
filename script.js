@@ -28,13 +28,13 @@ option()
 // Funkcja dopisana jako zdarzenie podczas procesu funkcji option(), wykonująca metode słuchacza zdarzeniowego który otworzy odpowiedni plik z podfolderu /subpages na tej samej karcie przeglądarki
 function eventclicker() {
     const sub = ["/subpages/ls.html", "/subpages/dir.html", "/subpages/os.html", "/subpages/hw.html", "/subpages/fil.html", "/subpages/soft.html"]
-    // for (let i = 0; i <= 6; i++) {
-    //     opt1[i].addEventListener("click", () => { window.open(sub[i], "_self") })
-    // }
-    opt1[0].addEventListener("click", () => { window.open(sub[0], "_self") })
-    opt1[1].addEventListener("click", () => { window.open(sub[1], "_self") })
-    opt1[2].addEventListener("click", () => { window.open(sub[2], "_self") })
-    opt1[3].addEventListener("click", () => { window.open(sub[3], "_self") })
-    opt1[4].addEventListener("click", () => { window.open(sub[4], "_self") })
-    opt1[5].addEventListener("click", () => { window.open(sub[5], "_self") })
+    for (let i = 0; i < opt1.length; i++) {
+        opt1[i].addEventListener("click", () => { window.open(sub[i], "_self") })
+    }
+    // opt1[0].addEventListener("click", () => { window.open(sub[0], "_self") })
+    // opt1[1].addEventListener("click", () => { window.open(sub[1], "_self") })
+    // opt1[2].addEventListener("click", () => { window.open(sub[2], "_self") })
+    // opt1[3].addEventListener("click", () => { window.open(sub[3], "_self") })
+    // opt1[4].addEventListener("click", () => { window.open(sub[4], "_self") })
+    // opt1[5].addEventListener("click", () => { window.open(sub[5], "_self") })
 }
