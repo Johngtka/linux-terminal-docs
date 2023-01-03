@@ -19,7 +19,7 @@ const opt1 = [document.querySelector('#option1'), document.querySelector('#optio
 function option() {
     const tab = ["listing commands", "directory commands", "system commands", "hardware commands", "files commands", "software commands"];
     for (let i = 0; i <= 6; i++) {
-        opt1[i].setAttribute('onClick', eventclicker())
+        opt1[i].setAttribute('onClick', 'eventclicker()')
         opt1[i].innerHTML = '<p>' + tab[i].toUpperCase() + '</p>'
     }
 }
