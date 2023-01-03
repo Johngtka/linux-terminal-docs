@@ -1,6 +1,5 @@
 // Globalny uchwyt do elementu w którym mają się pojawić elementy
 const opt_container = document.querySelector('#menu')
-
 // funkcja renderująca(tworząca) elementy z odpowiednimi parametrami (jak klasa i id(które jest sterowane za pomocą pętli)) do opt_container
 function render() {
     for (let i = 1; i <= 6; i++) {
@@ -18,7 +17,7 @@ const opt1 = [document.querySelector('#option1'), document.querySelector('#optio
 // Funkcja która przypisuje przekonwertowany text jako (CAPS LOCK) z lokalnej tablicy do elementu opt1. Dodatkowo dodaje do elementów opt1 zdażenie onclick ustawione na inną, niezależną funkcję
 function option() {
     const tab = ["listing commands", "directory commands", "system commands", "hardware commands", "files commands", "software commands"];
-    for (let i = 0; i <= 6; i++) {
+    for (let i = 0; i <= opt1.length; i++) {
         opt1[i].setAttribute('onClick', 'eventclicker()')
         opt1[i].innerHTML = '<p>' + tab[i].toUpperCase() + '</p>'
     }
@@ -28,7 +27,7 @@ option()
 // Funkcja dopisana jako zdarzenie podczas procesu funkcji option(), wykonująca metode słuchacza zdarzeniowego który otworzy odpowiedni plik z podfolderu /subpages na tej samej karcie przeglądarki
 function eventclicker() {
     const sub = ["/subpages/ls.html", "/subpages/dir.html", "/subpages/os.html", "/subpages/hw.html", "/subpages/fil.html", "/subpages/soft.html"]
-    for (let i = 0; i < opt1.length; i++) {
+    for (let i = 0; i <= opt1.length; i++) {
         opt1[i].addEventListener("click", () => { window.open(sub[i], "_self") })
     }
     // opt1[0].addEventListener("click", () => { window.open(sub[0], "_self") })
