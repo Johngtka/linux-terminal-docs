@@ -28,9 +28,8 @@ option()
 function eventclicker() {
 
     const sub = ["ls.html", "dir.html", "os.html", "hw.html", "fil.html", "soft.html"]
-    // const sub = ["/sub/ls.html", "/sub/dir.html", "/sub/os.html", "/sub/hw.html", "/sub/fil.html", "soft.html"]
     for (let i = 0; i <= opt1.length; i++) {
-        opt1[i].addEventListener("click", () => { window.open('/sub/' + sub[i], "_self") })
+        opt1[i].addEventListener("click", () => { window.open(sub[i], "_self") })
     }
     // opt1[0].addEventListener("click", () => { window.open(sub[0], "_self") })
     // opt1[1].addEventListener("click", () => { window.open(sub[1], "_self") })
