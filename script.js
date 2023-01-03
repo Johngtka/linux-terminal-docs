@@ -26,7 +26,7 @@ option()
 
 // Funkcja dopisana jako zdarzenie podczas procesu funkcji option(), wykonująca metode słuchacza zdarzeniowego który otworzy odpowiedni plik z podfolderu /subpages na tej samej karcie przeglądarki
 function eventclicker() {
-    const sub = ["/subpages/ls.html", "/subpages/dir.html", "/subpages/os.html", "/subpages/hw.html", "/subpages/fil.html", "/subpages/soft.html"]
+    const sub = ["ls.html", "dir.html", "os.html", "hw.html", "fil.html", "soft.html"]
     for (let i = 0; i <= opt1.length; i++) {
         opt1[i].addEventListener("click", () => { window.open(sub[i], "_self") })
     }
