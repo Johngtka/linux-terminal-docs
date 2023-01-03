@@ -26,7 +26,7 @@ option()
 
 // Funkcja dopisana jako zdarzenie podczas procesu funkcji option(), wykonująca metode słuchacza zdarzeniowego który otworzy odpowiedni plik z podfolderu /subpages na tej samej karcie przeglądarki
 function eventclicker() {
-    const sub = ["https://github.com/Johngtka/linux-terminal-docs/tree/master/sub/ls.html", "https://github.com/Johngtka/linux-terminal-docs/tree/master/sub/dir.html", "https://github.com/Johngtka/linux-terminal-docs/tree/master/sub/os.html", "https://github.com/Johngtka/linux-terminal-docs/tree/master/sub/hw.html", "https://github.com/Johngtka/linux-terminal-docs/tree/master/sub/fil.html", "https://github.com/Johngtka/linux-terminal-docs/tree/master/sub/soft.html"]
+    const sub = ["/linux-terminal-docs/sub/ls.html", "/linux-terminal-docs/sub/dir.html", "/linux-terminal-docs/sub/os.html", "/linux-terminal-docs/sub/sub/hw.html", "/linux-terminal-docs/sub/fil.html", "/linux-terminal-docs/sub/soft.html"]
     // const sub = ["/sub/ls.html", "/sub/dir.html", "/sub/os.html", "/sub/hw.html", "/sub/fil.html", "soft.html"]
     for (let i = 0; i <= opt1.length; i++) {
         opt1[i].addEventListener("click", () => { window.open(sub[i], "_self") })
